@@ -1,6 +1,6 @@
 # MyMorningFeed 🌅
 
-A fully automated data pipeline that delivers a personalized morning briefing — live weather, top headlines from multiple news sources, and AI-powered media bias analysis — through a clean web dashboard built with Python and Flask.
+A fully automated data pipeline that delivers a personalized morning briefing — live weather, top headlines from multiple news sources, and AI-powered media bias analysis through a clean web dashboard built with Python and Flask.
 
 ---
 
@@ -47,7 +47,7 @@ MyMorningFeed/
 
 - **Live Weather** — real-time temperature, feels like, humidity, and conditions for any city
 - **Multi-Source Headlines** — pulls from CNN, Fox News, BBC, AP, Washington Post, and more
-- **AI Bias Analysis** — LLaMA 3.3 identifies top stories, compares source framing, and rates sentiment (Positive / Negative / Neutral) per outlet
+- **AI Bias Analysis** — LLaMA 3.3 identifies top stories and compares source framing
 - **Persistent Storage** — every pipeline run saves weather, articles, and analysis to SQLite
 - **One-Click Refresh** — refresh button re-runs the full pipeline and updates the dashboard
 - **Responsive Design** — works on desktop and mobile
