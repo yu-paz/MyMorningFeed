@@ -18,7 +18,7 @@ Every morning, MyMorningFeed:
 
 ## Demo
 
-![MyMorningFeed Dashboard](screenshot.png)
+![MyMorningFeed Dashboard](Screenshot.png)
 
 ---
 
