@@ -4,14 +4,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-def get_news():
-    sources = "cnn,fox-news,bbc-news,the-washington-post,associated-press"
-    api_key= os.getenv("NEWS_API_KEY")
-    url = f"https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=8b9755bf1eec4801aff0ba55e7130b3d"
-
+def get_news(topic="top stories"):
+    api_key = os.getenv("NEWS_API_KEY")
+    url = f"https://newsapi.org/v2/everything?q={topic}&apiKey={api_key}&pageSize=20&language=en&sortBy=publishedAt"
+    
     response = requests.get(url)
     data = response.json()
-
+    
     return data["articles"]
 
 get_news()

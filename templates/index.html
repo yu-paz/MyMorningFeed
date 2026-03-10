@@ -140,6 +140,27 @@
             color: var(--ink);
         }
 
+        .refresh-bar input {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
+            background: transparent;
+            border: 1px solid #7a7268;
+            color: var(--cream);
+            padding: 6px 12px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .refresh-bar input:focus {
+            border-color: var(--gold);
+        }
+
+        .refresh-bar input::placeholder {
+            color: #7a7268;
+            text-transform: uppercase;
+        }
+
         /* ── MAIN GRID ── */
         .container {
             max-width: 1200px;
@@ -470,8 +491,10 @@
 <!-- REFRESH BAR -->
 <div class="refresh-bar">
     <span>Last updated: <span id="last-updated"></span></span>
-    <form action="/" method="get" style="margin:0" onsubmit="showLoader()">
-        <button class="refresh-btn" type="submit">↻ Refresh Feed</button>
+    <form action="/" method="get" style="margin:0;display:flex;gap:10px;align-items:center;" onsubmit="showLoader()">
+        <input type="text" name="city" placeholder="City..." value="{{ city }}">
+        <input type="text" name="topic" placeholder="Topic e.g. war, AI..." value="{{ topic }}">
+        <button class="refresh-btn" type="submit">↻ Update Feed</button>
     </form>
 </div>
 
