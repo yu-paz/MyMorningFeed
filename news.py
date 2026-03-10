@@ -11,7 +11,7 @@ def get_news():
     response = requests.get(url)
     data = response.json()
 
-    print(data)
+    return data["articles"]
 
 get_news()
 

@@ -11,6 +11,6 @@ def get_weather(lat= "40.7128", lon= "-74.0060"):
     response = requests.get(url)
     data = response.json()
 
-    print(data)
+    return data
 
 get_weather()
