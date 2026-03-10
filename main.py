@@ -15,7 +15,7 @@ def run_pipeline():
     humidity = weather["main"]["humidity"]
 
     print("\n" + "="*50)
-    print("🌅  GOOD MORNING — DAILY DIGEST")
+    print("🌅  GOOD MORNING")
     print("="*50)
     print(f"\n📍 Weather in {city}")
     print(f"   {temp}°F — {description.capitalize()}")
