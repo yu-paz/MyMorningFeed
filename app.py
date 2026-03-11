@@ -61,4 +61,5 @@ def home():
                          topic=topic)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Note: when running in Docker, access via http://127.0.0.1:8080
+    app.run(debug=True, host="0.0.0.0", port=5000)
