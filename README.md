@@ -1,6 +1,6 @@
 # MyMorningFeed 🌅
 
-A fully automated data pipeline that delivers a personalized morning briefing — live weather, top headlines from multiple news sources, and AI-powered media bias analysis through a clean web dashboard built with Python and Flask as well as containorized through docker. 
+A fully automated data pipeline that delivers a personalized morning briefing — live weather, top headlines from multiple news sources, and AI-powered media bias analysis through a clean web dashboard built with Python and Flask as well as containerized through docker. 
 
 ---
 
